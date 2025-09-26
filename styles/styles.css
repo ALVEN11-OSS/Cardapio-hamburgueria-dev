@@ -1,21 +1,22 @@
-body{
-    background-image: linear-gradient(to right, #cb9149d0, #df9f55);
-    margin: 0 auto;
+body {
+  background-image: linear-gradient(to right, #dbdbdbd0, #ffffff);
+  margin: 0 auto;
   padding-top: 70px; /* empurra tudo pra baixo */
 }
 
+/* logo */
 .logo img {
   width: 128px;
   height: 128px;
   border-radius: 50%;
-   box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-   transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
   display: block;
   margin: 50px auto 0;
 }
 
 .logo img:hover {
-   transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .logo-text {
@@ -33,6 +34,24 @@ body{
   margin-top: -10px;
 }
 
+.logo-subtext1 {
+  font-size: 1.4rem;
+  color: #fdfdfd;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  text-align: center;
+  background-color: rgb(54, 222, 16);
+  padding: 5px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.logo-subtext1:hover {
+  background-color: rgb(40, 180, 12);
+  transform: scale(1.1);
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+}
+
+/* banner */
 .banner {
   display: flex;
   align-items: center;
@@ -43,100 +62,16 @@ body{
   background-position: center;
   box-shadow: 0 1px 7px rgb(0, 0, 0);
 }
-.logo-subtext1 {
-  font-size: 1.4rem;
-  color: #fdfdfd;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-  text-align: center;
-  background-color: rgb(54, 222, 16);
-  padding: 5px;
-  border-radius: 5px;
-
-   transition: all 0.3s ease;
-}
-
-.logo-subtext1:hover {
-  background-color: rgb(40, 180, 12); /* muda a cor */
-  transform: scale(1.1); /* dá um zoomzinho */
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.4); /* sombra mais forte */
-}
 
 .text-menu {
   text-align: center;
-  color: #fdfdfd;
-  position: absolute;
-  bottom: 25%; 
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.menu-card {
-  width: 240px;
-  margin: 180px auto 20px;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  background: #eaeaea;
-  font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.3s ease;
-}
-
-.menu-card:hover {
-  transform: scale(1.03);
-}
-
-.menu-img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-}
-
-.menu-content {
-  padding: 20px;
-}
-
-.menu-title {
-  font-size: 1.3rem;
-  margin: 10px 0;
-  color: #333;
-}
-
-.menu-description {
-  font-size: 0.95rem;
-  color: #666;
-  margin-bottom: 10px;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.menu-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu-price {
-  font-size: 1.2rem;
+  margin: 10px 0 5px 0; /* espaço em cima e embaixo */
+  font-size: 16px;
   font-weight: bold;
-  color: #e67e22;
+  color: #000;
 }
 
-.menu-btn {
-  background: #27ae60;
-  color: white;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.menu-btn:hover {
-  background: #219150;
-}
-
+/* navbar */
 li, a, button {
   font-size: 18px;
   color: white;
@@ -148,13 +83,13 @@ li, a, button {
   justify-content: space-between;
   align-items: center;
   padding: 10px 11px;
-  background-color: #743911;
+  background-color: #FF3131;
 
-  position: fixed;   /* fixa no topo */
-  top: 0;            /* encosta no topo */
-  left: 0;           /* encosta na esquerda */
-  width: 100%;       /* ocupa a tela inteira */
-  z-index: 1000;     /* fica por cima dos outros elementos */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .nav-bar {
@@ -167,7 +102,7 @@ li, a, button {
 .nav-links {
   list-style: none;
   gap: 40px;
-  margin-right: 60px; /* afasta os links do botão */
+  margin-right: 60px;
 }
 
 .nav-links li {
@@ -194,11 +129,86 @@ button:hover {
 
 @media (max-width: 800px) {
   li, a, button {
-  font-size: 12px;
-}
+    font-size: 12px;
+  }
 
   .nav-bar {
-  font-size: 22px;
+    font-size: 22px;
+  }
 }
 
+/* container dos cards */
+.cards-container {
+  display: flex;
+  justify-content: center;   /* centraliza */
+  align-items: flex-start;   /* alinha pelo topo */
+  gap: 40px;                 /* espaço entre os cards */
+  flex-wrap: wrap;           /* quebra linha em telas menores */
+  margin-top: 0px;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+/* card */
+.menu-card2 {
+  flex: 0 0 auto;
+  width: 240px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  background: #eaeaea;
+  font-family: Arial, sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.menu-card2:hover {
+  transform: scale(1.03);
+}
+
+.menu-img2 {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.menu-content1 {
+  padding: 15px;
+}
+
+.menu-title2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.menu-description3 {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.menu-footer2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-price2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #e67e22;
+}
+
+.menu-btn2 {
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.menu-btn2:hover {
+  background: #219150;
 }
