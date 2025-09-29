@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>Dev Burguer - a melhor hamburgueria dev!</title>
-</head>
-<body>
-    <!--Header-->
-    
-    <header class="banner">
-      <header class="navbar">
-        <span class="nav-bar">Dev burguer</span>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <span class="nav-bar">Dev Burguer</span>
         <ul class="nav-links">
           <li><a href="#">Home</a></li>
           <li><a href="#">Sobre</a></li>
           <li><a href="#">Cardápio</a></li>
         </ul>
-      </span>
-      <a href="#"><button>Contato</button></a>
-      </header>
-        <div class="logo">
-            <img src="./assets/hamb-1.png" alt="Dev Burguer Logo"/>
-            <h1 class="logo-text">Dev Burguer</h1>
-            <h2 class="logo-subtext">Rua dev sucesso, 12, Fortaleza, CE</h2>
-             <p class="logo-subtext1">Seg á Dom - 08:00 às 18:00</p>
-        </div>
-        <div class="text-menu">
-            <h1>Conheça nosso cardápio</h1>
-        </div>
+        <a href="#"><button>Contato</button></a>
+      </nav>
     </header>
-    <!--Fim Header-->
-    <div class="menu-card">
-  <img src="./assets/hamb-1.png" alt="Prato" class="menu-img">
-  <div class="menu-content">
-    <h3 class="menu-title">Hambúrguer Artesanal</h3>
-    <p class="menu-description">Pão brioche, carne 180g, queijo cheddar, alface e molho especial.</p>
-    <div class="menu-footer">
-      <span class="menu-price">R$ 25,90</span>
-      <button class="menu-btn">Adicionar</button>
-    </div>
- </div>
-</div>
+    <main>
+      <section class="banner">
+        <div class="logo">
+          <img src="./assets/hamb-1.png" alt="Logo da Dev Burguer" />
+          <h1 class="logo-text">Dev Burguer</h1>
+          <h2 class="logo-subtext">Rua dev sucesso, 12, Fortaleza, CE</h2>
+          <p class="logo-subtext1">Seg á Dom - 08:00 às 18:00</p>
+        </div>
+      </section>
 
-</body>
+      <section class="menu-section">
+        <h2 class="menu-section__title">Conheça nosso cardápio</h2>
+        <div class="menu-card">
+          <img src="./assets/hamb-1.png" alt="Prato" class="menu-img" />
+          <div class="menu-content">
+            <h3 class="menu-title">Hambúrguer Artesanal</h3>
+            <p class="menu-description">
+              Pão brioche, carne 180g, queijo cheddar, alface e molho especial.
+            </p>
+            <div class="menu-footer">
+              <span class="menu-price">R$ 25,90</span>
+              <button class="menu-btn">Adicionar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

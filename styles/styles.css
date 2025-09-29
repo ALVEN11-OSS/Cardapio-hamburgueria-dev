@@ -70,9 +70,23 @@ body{
   transform: translateX(-50%);
 }
 
+.menu-section__title {
+  text-align: center;
+  color: #fdfdfd;
+  margin-bottom: 20px;
+}
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
 .menu-card {
   width: 240px;
-  margin: 180px auto 20px;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
