@@ -1,80 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/styles.css">
-  <link rel="stylesheet" href="./styles/footer.css">
-  <title>Dev Burguer©</title>
-</head>
-<body>
-  <!-- Header / Navbar -->
-  <header class="banner">
-    <div class="navbar">
-      <span class="nav-bar">Dev Burguer</span>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Perfil</a></li>
-        <li><a href="#">Cardápio</a></li>
-      </ul>
-      <a href="#"><button>Contato</button></a>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <title>Dev Burguer©</title>
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header>
+      <nav class="navbar">
+        <span class="navbar__brand">Dev Burguer</span>
+        <ul class="navbar__links">
+          <li class="navbar__link"><a href="#">Home</a></li>
+          <li class="navbar__link"><a href="#">Perfil</a></li>
+          <li class="navbar__link"><a href="#">Cardápio</a></li>
+        </ul>
+        <a href="#" class="navbar__button">Contato</a>
+      </nav>
+    </header>
 
-    <div class="logo">
-      <img src="./assets/hamb-1.png" alt="Dev Burguer Logo"/>
-      <h1 class="logo-text">Dev Burguer</h1>
-      <h2 class="logo-subtext">Rua dev sucesso, 12, Fortaleza, CE</h2>
-      <p class="logo-subtext1">Seg á Dom - 08:00 às 18:00</p>
-    </div>
-  </header>
-
-  <!-- Título do cardápio -->
-  <div class="text-menu">
-    <h1>Conheça nosso cardápio</h1>
-  </div>
-
-  <!-- Cards do Cardápio -->
-  <div class="cards-container">
-    <div class="menu-card2">
-      <img src="./assets/hamb-1.png" class="menu-img2" alt="Hambúrguer 1">
-      <div class="menu-content1">
-        <h3 class="menu-title2">Hambúrguer Artesanal</h3>
-        <p class="menu-description3">Pão brioche, carne 180g, queijo cheddar, alface e molho especial.</p>
-        <div class="menu-footer2">
-          <span class="menu-price2">R$ 25,90</span>
-          <button class="menu-btn2">Adicionar</button>
+    <main>
+      <section class="banner">
+        <div class="logo">
+          <img
+            src="./assets/hamb-1.png"
+            alt="Dev Burguer Logo"
+            class="logo__image"
+          />
+          <h1 class="logo__title">Dev Burguer</h1>
+          <h2 class="logo__subtitle">Rua dev sucesso, 12, Fortaleza, CE</h2>
+          <p class="logo__status">Seg á Dom - 08:00 às 18:00</p>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <div class="menu-card2">
-      <img src="./assets/hamb-2.png" class="menu-img2" alt="Hambúrguer 2">
-      <div class="menu-content1">
-        <h3 class="menu-title2">Cheddar Bacon</h3>
-        <p class="menu-description3">Pão artesanal, carne 180g, cheddar, bacon crocante e molho especial.</p>
-        <div class="menu-footer2">
-          <span class="menu-price2">R$ 27,90</span>
-          <button class="menu-btn2">Adicionar</button>
+      <section class="menu-section">
+        <h2 class="menu-section__title">Conheça nosso cardápio</h2>
+        <div class="menu-section__grid">
+          <div class="menu-card">
+            <img
+              src="./assets/hamb-1.png"
+              class="menu-card__image"
+              alt="Hambúrguer Artesanal"
+            />
+            <div class="menu-card__content">
+              <h3 class="menu-card__title">Hambúrguer Artesanal</h3>
+              <p class="menu-card__description">
+                Pão brioche, carne 180g, queijo cheddar, alface e molho
+                especial.
+              </p>
+              <div class="menu-card__footer">
+                <span class="menu-card__price">R$ 25,90</span>
+                <button class="menu-card__button">Adicionar</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="./assets/hamb-2.png"
+              class="menu-card__image"
+              alt="Cheddar Bacon"
+            />
+            <div class="menu-card__content">
+              <h3 class="menu-card__title">Cheddar Bacon</h3>
+              <p class="menu-card__description">
+                Pão artesanal, carne 180g, cheddar, bacon crocante e molho
+                especial.
+              </p>
+              <div class="menu-card__footer">
+                <span class="menu-card__price">R$ 27,90</span>
+                <button class="menu-card__button">Adicionar</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="./assets/hamb-3.png"
+              class="menu-card__image"
+              alt="Hambúrguer 3"
+            />
+            <div class="menu-card__content">
+              <h3 class="menu-card__title">X-Tudo</h3>
+              <p class="menu-card__description">
+                Pão brioche, carne 180g, ovo, queijo, alface, tomate e molho
+                especial.
+              </p>
+              <div class="menu-card__footer">
+                <span class="menu-card__price">R$ 29,90</span>
+                <button class="menu-card__button">Adicionar</button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
-    <div class="menu-card2">
-      <img src="./assets/hamb-3.png" class="menu-img2" alt="Hambúrguer 3">
-      <div class="menu-content1">
-        <h3 class="menu-title2">X-Tudo</h3>
-        <p class="menu-description3">Pão brioche, carne 180g, ovo, queijo, alface, tomate e molho especial.</p>
-        <div class="menu-footer2">
-          <span class="menu-price2">R$ 29,90</span>
-          <button class="menu-btn2">Adicionar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="rodape">
-    <p class="footer-text">© 2025 Dev Burguer. Todos os direitos reservados.</p>
-  </footer>
-</body>
+    <footer class="footer">
+      <p class="footer__text">
+        © 2025 Dev Burguer. Todos os direitos reservados.
+      </p>
+    </footer>
+  </body>
 </html>
